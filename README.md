@@ -1,9 +1,3 @@
-# Mentos-AOS
-
-# Tech Stack
-
-
-
 # Conventions
 
 ## Type
@@ -45,5 +39,10 @@ Git Flow
 
 - 풀 요청은 등록된 템플릿을 사용하여 작성
 - 팀원 한명 이상 approve 시 머지 가능
+
+# Setting
+- Minimum SDK : 24 (Android 7.0)
+- Target : 35
+- 테스트 에뮬레이터(AVD) : Pixel 8 (API 35)
 
 

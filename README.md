@@ -85,9 +85,8 @@ Git Flow
 
 ### 3. Drawable
 
-* `<WHAT>(_<WHERE>)_<DESCRIPTION>(_<SIZE>)`
+* `<WHAT>(_<WHERE>)_<DESCRIPTION>`
 * 이미지가 여러군데에서 활용될 경우, `<WHERE>`는 생략 가능
-* 이미지의 크기가 1개밖에 없는 경우, `<SIZE>`는 생략 가능
 
 **What**
 

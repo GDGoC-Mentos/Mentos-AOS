@@ -1,13 +1,14 @@
 # Conventions
 
-## Type
-* **[Feat]** : 새로운 기능 구현 
-* **[UI]** : UI 작업 
-* **[Fix]** : 버그 및 오류 해결 
-* **[Merge]** : 다른 브랜치와의 merge
-* **[Refactor]** : 코드 리팩토링 (기능에는 변화 없지만 코드 구조를 개선할 때)
-* **[Chore]** : 버전 코드 수정, 패키지 구조 변경, 타입 및 변수명 변경 등의 작은 작업 
-* **[Docs]** : 코드 변경 없이 문서(README, Wiki 등)만 수정할 때
+|Type|설명|
+|--|--|
+|`Feat`|새로운 기능 구현|
+|`UI`|UI 작업|
+|`Fix`|버그 및 오류 해결|
+|`Merge`|다른 브랜치와의 merge|
+|`Refactor`|코드 리팩토링 (기능에는 변화 없지만 코드 구조를 개선할 때)|
+|`Chore`|버전 코드 수정, 패키지 구조 변경, 타입 및 변수명 변경 등의 작은 작업|
+|`Docs`|코드 변경 없이 문서(README, Wiki 등)만 수정할 때|
 
 ## Branch
 <img width="680" alt="스크린샷 2025-01-07 오후 8 45 55" src="https://github.com/user-attachments/assets/c3bc45a2-8d00-429f-b1c0-32ef3b2ee492" />
@@ -40,9 +41,66 @@ Git Flow
 - 기능 구현 설명 자세하게 적을 것!
 - 팀원 한명 이상 approve 시 머지 가능
 
-# Setting
-- Minimum SDK : 24 (Android 7.0)
-- Target : 35
-- 테스트 에뮬레이터(AVD) : Pixel 8 (API 35)
 
+# Android-Style-Guide
+### 1. Layout
+
+* **xml 파일명 : snake_case** `[WHAT]_[WHERE]`
+ 
+    (ex: activity_main , fragment_home)
+
+|prefix|설명|
+|--|--|
+|`activity_`|Activity에서 쓰이는 layout|
+|`fragment_`|Fragment에서 쓰이는 layout|
+|`dialog_`|Dialog에서 쓰이는 layout|
+|`view_`|CustomView에서 쓰이는 layout|
+|`item_`|RecyclerView, GridView, ListView등에서 ViewHolder에 쓰이는 layout|
+
+### 2. ID
+
+* **View ID :** `[파일 이름]_[설명]_[뷰 약자]` 중간 설명은 camelCase로 작성
+
+    (ex. MainActivity의 요소라면, main_albumlmg_iv)
+
+|View Type|View 약자|
+|--|--|
+|`TextView`|tv|
+|`EditText`|et|
+|`RecyclerView`|rv|
+|`ImageView`|iv|
+|`Button` `ImageButton`|btn|
+|`ScrollView`|sv|
+|`TabLayout`|tl|
+|`ViewPager`|vp|
+|`ToolBar`|tb|
+|`CardView`|cv|
+|`Linearlayout`|ll|
+|`FrameLayout`|fl|
+|`CheckBox`|cb|
+|`RadioButton`|rb|
+|`BottomNavigationView`|bnv|
+|`FragmentContainerView`|fcv|
+|`View(밑줄, 경계선, 라인)`|view|
+
+### 3. Drawable
+
+* `<WHAT>(_<WHERE>)_<DESCRIPTION>`
+* 이미지가 여러군데에서 활용될 경우, `<WHERE>`는 생략 가능
+
+**What**
+
+| Prefix | 설명 |
+| ------------- | ------------- |
+| `btn_` | 버튼으로 쓰이는 이미지 |
+| `ic_` | 버튼이 아닌 화면에 보여지는 이미지 |
+| `bg_` | background로 사용 |
+  
+
+# Setting
+- Kotlin
+- Android Studio
+- Minimum SDK : 24 (Android 7.0)
+- Target SDK : 35
+- 테스트 에뮬레이터(AVD) : Pixel 8 (API 35)
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categoryButton"
+    android:layout_width="70dp"
+    android:layout_height="35dp"
+    android:layout_margin="6dp"
+
+    android:textSize="12sp"
+    android:background="@drawable/btn_beforeselect"
+    android:backgroundTint="@null"/>

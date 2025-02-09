@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/Activityregister_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        />
+
+    <View
+        android:id="@+id/Activityregister_titleLine_v"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_centerInParent="true"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/Activityregister_title_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/Activityregister_welcom_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@id/Activityregister_titleLine_v"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Activityregister_RegisterForm_ll"
+        >
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/img_logoicon_temp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="멘토스에 오신 것을\n환영합니다"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            />
+    </LinearLayout>
+
+    <!--회원가입 폼-->
+    <LinearLayout
+        android:id="@+id/Activityregister_RegisterForm_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toBottomOf="@id/Activityregister_welcom_ll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nextBtn"
+        android:layout_marginBottom="20dp"
+        >
+
+        <EditText
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_tvstroke"
+            android:hint="이름"
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_tvstroke"
+            android:hint="이메일 주소"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 6~12자 영문, 숫자로 입력해주세요"
+            android:layout_marginBottom="15dp"/>
+
+
+
+        <EditText
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_tvstroke"
+            android:hint="비밀번호"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+
+            />
+
+        <EditText
+            android:layout_width="360dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_tvstroke"
+            android:hint="비밀번호 확인"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 비밀번호는 영문 대소문자, 숫자, 특수문자(.!@#$%) 를\n   혼합하여 8~20자로 입력해주세요."
+            android:layout_marginBottom="15dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <android.widget.Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="멘토"
+                android:background="@drawable/btn_outline"
+                android:elevation="8dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@null"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+
+                />
+
+            <android.widget.Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:text="멘티"
+                android:background="@drawable/btn_outline"
+                android:elevation="8dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@null"
+                android:textSize="16sp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginVertical="5dp"
+
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 어떤 역할로 멘토링 서비스를 이용하고 싶으신가요?"
+            />
+
+
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/nextBtn"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="다음"
+        android:background="@drawable/btn_outline"
+        android:elevation="8dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@null"
+        android:textSize="16sp"
+
+        app:layout_constraintTop_toBottomOf="@id/Activityregister_RegisterForm_ll"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

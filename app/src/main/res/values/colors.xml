@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="btnNormalColor">#E1F6D6</color>
+    <color name="btnSelectedColor">#51CA97</color>
+
+    <color name="slectBtnNormal">#FFFFFFFF</color>
+    <color name="slectBtnSelected">#E1F6D6</color>
+
 </resources>

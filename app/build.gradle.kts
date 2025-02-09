@@ -36,7 +36,7 @@ android {
 
     buildFeatures {
         viewBinding = true
-    }git rm -r --cached Mentos-AOS
+    }
 }
 
 dependencies {
